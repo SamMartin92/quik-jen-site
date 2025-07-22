@@ -1,0 +1,19 @@
+<h2>{{ title }}</h2>
+@if (wishList.length > 0) {
+    <div class="wish-list-banner">
+        <p><span style="color: red; font-size: 1.5em;">&#10084;&#65039;</span> My Wish List: 
+        @for(item of wishList; track item.id) {
+            @if (wishList.indexOf(item) != wishList.length - 1 && wishList.length >1){
+                <span class="wish-list-item">{{ item }}, </span>
+            } @else {
+                <span class="wish-list-item">{{ item }}</span>
+            }
+        }
+    
+        </p> 
+    </div>
+}
+
+@for(course of courses; track course.id) {
+    <app-course-card [course]="course" (addedToWishList)="onAddToWishList($event)" (courseBooked)="onCourseBooked($event)"></app-course-card>
+}
