@@ -1,0 +1,9 @@
+<!-- <button (click)="loadCourseByID(courseID.value)" >Display course for id <input type="number" #courseID></button> -->
+
+@if (course) {
+    <h2>{{ course.title }}</h2>
+    <p>{{ course.description }}</p>
+    <img [src]="course.img" alt="{{ course.title }} image" width="100" />
+    <p>{{ course.price | currency: 'EUR'}}</p>
+    <p>{{ course.date | date:'longDate'}}</p>
+}

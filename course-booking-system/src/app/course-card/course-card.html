@@ -1,4 +1,5 @@
 <div class="course-card">
+    @if (course) {
         <h3>{{ course.title }}</h3>
         <p>{{ course.description }}</p>
         <p>{{ course.price | currency: 'EUR'}}</p>
@@ -14,4 +15,7 @@
         }
         <button  (click)="onAddToWishList()">AddToWishList</button>
         <button [disabled]="course.soldOut" (click)="onCourseBooked()">View details</button>
+        <button (click)="goToDetails(course.id)">See details</button>
+    }
     </div>
+

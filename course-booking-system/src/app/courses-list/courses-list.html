@@ -4,9 +4,9 @@
         <p><span style="color: red; font-size: 1.5em;">&#10084;&#65039;</span> My Wish List: 
         @for(item of wishList; track item.id) {
             @if (wishList.indexOf(item) != wishList.length - 1 && wishList.length >1){
-                <span class="wish-list-item">{{ item }}, </span>
+                <span class="wish-list-item">{{ item.title }}, </span>
             } @else {
-                <span class="wish-list-item">{{ item }}</span>
+                <span class="wish-list-item">{{ item.title }}</span>
             }
         }
     

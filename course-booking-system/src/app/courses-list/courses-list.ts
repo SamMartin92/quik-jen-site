@@ -1,5 +1,9 @@
 import { Component, OnInit} from '@angular/core';
 import { CourseCard, } from '../course-card/course-card';
+import { Course } from '../models/course.model';
+import { CourseService } from '../services/course';
+import { ActivatedRoute, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-courses-list',
@@ -7,26 +11,39 @@ import { CourseCard, } from '../course-card/course-card';
   templateUrl: './courses-list.html',
   styleUrl: './courses-list.css'
 })
+
 export class CoursesList implements OnInit {
   title: string = 'Courses List';
-  courses = [
-    { id: 1, title: 'Angular Basics', description: 'Learn the basics of Angular framework.' , price: 100 , date: '02/08/2025', soldOut: false, img: 'ang-logo.png'},
-    { id: 2, title: 'Advanced Angular', description: 'Deep dive into advanced Angular concepts.', price: 150 , date: '02/08/2025', soldOut: true, img: 'ang-logo.png'},
-    { id: 3, title: 'Angular Testing', description: 'Master testing in Angular applications.', price: 120 , date: '02/08/2025', soldOut: false, img: 'ang-logo.png'},
-    { id: 4, title: 'Angular Performance', description: 'Optimize your Angular applications for better performance.', price: 130 , date: '02/08/2025', soldOut: false, img: 'ang-logo.png'}
-   ];
+  courses: Course[] = [];
+  wishList: Course[] = [];
 
-   wishList: any[] = [];
+  constructor(private courseService: CourseService, private route: ActivatedRoute, private router: Router) {
+    
+  }
 
-   ngOnInit(): void {
-    console.log('CoursesList component initialized');
-   }
-   
-   onCourseBooked(course: any): void {
-    console.log(`Course booked: ${course.title}`);    
-   }
+  ngOnInit(): void {
+    this.route.queryParamMap.subscribe(params => {
+      const desc = params.get('description');
+      this.loadCourses(desc);
+    });
+  }
+  
+  loadCourses(description: string | null){
+    this.courseService.getCourses(description).subscribe({
+      next: (data: Course[])=>{
+        this.courses = data;
+      },
+      error: (err) => {
+        console.error('Error fetching courses', err)
+      }
+    });
+  }
 
-   onAddToWishList(course: any): void {
-    this.wishList.push(course.title);
-   }
+  onCourseBooked(course: Course): void {
+  console.log(`Course booked: ${course.title}`);    
+  }
+
+  onAddToWishList(course: Course): void {
+  this.wishList.push(course);
+  }
   }

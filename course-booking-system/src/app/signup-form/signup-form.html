@@ -1,0 +1,60 @@
+<h2>Sign Up for a course!</h2>
+
+<form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input id="name" formControlName="name" type="text" class="form-control">
+        @if(name?.invalid && (name?.dirty || name?.touched)) {
+        <div class="error">
+            @if (name?.errors?.['required']){
+            <small>Name is required</small>
+            }
+            @if (name?.errors?.['minlength']) {
+            <small>Name gotta be longer</small>
+            }
+        </div>
+        }
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input id="email" formControlName="email" type="text" class="form-control">
+        @if(email?.invalid && (email?.dirty || email?.touched)) {
+        <div class="error">
+            @if (email?.errors?.['required']){
+            <small>Email is required</small>
+            }
+            @if (email?.errors?.['email']) {
+            <small>Not an email</small>
+            }
+        </div>
+        }
+    </div>
+    <div class="form-group">
+        <label for="enrolledCourseID">Enroll in:</label>
+        <select id="enrolledCourseID" formControlName="enrolledCourseID">
+            <option value="" disabled>Select a course</option>
+            @for(course of courses; track course.id) {
+            <option [value]="course.id">{{ course.title }}</option>
+            }
+        </select>
+        @if(enrolledCourseID?.invalid && (enrolledCourseID?.dirty || enrolledCourseID?.touched)) {
+        <div class="error">
+            @if (enrolledCourseID?.errors?.['required']){
+            <small>Course is required</small>
+            }
+        </div>
+    }
+    </div>
+    <button type="submit" [disabled]="signUpForm.invalid">Sign Up</button>
+    @if(submissionSuccess) {
+        <div class="success">
+            <p>Thanks for signing up!</p>
+        </div>
+    }
+
+    @if (submissionError) {
+        <div class="error">
+            <p>{{ submissionError }}</p>
+        </div>
+    }
+</form>

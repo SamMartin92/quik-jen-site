@@ -4,3 +4,11 @@ nav > a {
     padding: 10px 15px;
     border-radius: 5px;
 }
+
+nav > a:hover {
+    background-color: #f0f0f0;
+}
+
+nav :active {
+    background-color: #e0e0e0;
+}
