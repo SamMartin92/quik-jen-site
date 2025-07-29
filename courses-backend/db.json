@@ -1,0 +1,159 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Angular Basics",
+      "description": "Learn the basics of Angular framework.",
+      "price": 100,
+      "date": "02/08/2025",
+      "soldOut": false,
+      "img": "ang-logo.png"
+    },
+    {
+      "id": 2,
+      "title": "Advanced Angular",
+      "description": "Deep dive into advanced Angular concepts.",
+      "price": 150,
+      "date": "02/08/2025",
+      "soldOut": true,
+      "img": "ang-logo.png"
+    },
+    {
+      "id": 3,
+      "title": "Angular Testing",
+      "description": "Master testing in Angular applications.",
+      "price": 120,
+      "date": "02/08/2025",
+      "soldOut": false,
+      "img": "ang-logo.png"
+    },
+    {
+      "id": 4,
+      "title": "Angular Performance",
+      "description": "Optimize your Angular applications for better performance.",
+      "price": 130,
+      "date": "02/08/2025",
+      "soldOut": false,
+      "img": "ang-logo.png"
+    },
+    {
+      "id": 1753454083925,
+      "title": "New Course",
+      "description": "This is a new course",
+      "price": "55",
+      "img": "",
+      "onSale": true
+    },
+    {
+      "id": 1753546083691,
+      "title": "New One",
+      "description": "Loadsa stuff goin on here",
+      "price": "100",
+      "img": "",
+      "onSale": true,
+      "soldOut": false
+    }
+  ],
+  "students": [
+    {
+      "id": 1753448286577,
+      "name": "Sam Martin",
+      "email": "sam@sam.com",
+      "enrolledCourses": []
+    },
+    {
+      "id": 1753448286991,
+      "name": "Sam Martin",
+      "email": "sam@sam.com",
+      "enrolledCourses": []
+    },
+    {
+      "id": 1753448287038,
+      "name": "Sam Martin",
+      "email": "sam@sam.com",
+      "enrolledCourses": []
+    },
+    {
+      "id": 1753448311801,
+      "name": "Joe",
+      "email": "Joe@Joe.ie",
+      "enrolledCourses": []
+    },
+    {
+      "id": 1753448512077,
+      "name": "John",
+      "email": "fronmg@email.com",
+      "enrolledCourses": []
+    },
+    {
+      "id": 1753448597065,
+      "name": "Mary",
+      "email": "Mary@mary.com",
+      "enrolledCourses": []
+    },
+    {
+      "id": 1753448648887,
+      "name": "Johno",
+      "email": "john@o.com",
+      "enrolledCourses": []
+    },
+    {
+      "id": 1753448716597,
+      "name": "This",
+      "email": "this@this.com",
+      "enrolledCourses": []
+    },
+    {
+      "id": 1753448801581,
+      "name": "Again",
+      "email": "Again@again.com",
+      "enrolledCourses": []
+    },
+    {
+      "id": 1753448974574,
+      "name": "Againagain",
+      "email": "another@again.com",
+      "enrolledCourses": []
+    },
+    {
+      "id": 1753449126079,
+      "name": "Success",
+      "email": "thisworks@this.com",
+      "enrolledCourses": []
+    },
+    {
+      "id": 1753449220119,
+      "name": "Try Again",
+      "email": "tryagian@gain.com",
+      "enrolledCourses": []
+    },
+    {
+      "id": 1753449405416,
+      "name": "Sam Success",
+      "email": "success@l.com",
+      "enrolledCourses": []
+    },
+    {
+      "id": 1753449594938,
+      "name": "",
+      "email": "",
+      "enrolledCourses": []
+    },
+    {
+      "id": 1753450813410,
+      "name": "Gonna work",
+      "email": "gonna@work.com",
+      "enrolledCourses": [
+        3
+      ]
+    },
+    {
+      "id": 1753546106573,
+      "name": "New Studento",
+      "email": "new@one.com",
+      "enrolledCourses": [
+        1753546083691
+      ]
+    }
+  ]
+}

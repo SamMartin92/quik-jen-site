@@ -1,0 +1,12 @@
+<div class="admin-links">
+    <a (click)="addCourseFormActive()" routerLink="new-course" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Add Course</a>
+    <a (click)="studentListActive()" routerLink="student-list" routerLinkActive="active">Students</a>
+</div>
+<!-- @if (addCourseActive) {
+    <app-new-course-form></app-new-course-form>
+}
+@if (viewStudentsActive) {
+    <app-student-list></app-student-list>
+} -->
+<router-outlet></router-outlet>
+    

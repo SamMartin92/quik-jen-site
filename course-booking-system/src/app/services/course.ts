@@ -40,6 +40,16 @@ export class CourseService {
     return this.http.get<Course[]>(url);
   }
 
+  getCourseTitle(id: number| null): Observable<Course[]> {
+    let url = `${this.baseUrl}/courses`;
+    if (id) {
+      url += `?description=${String(id)}`;
+    }
+
+    return this.http.get<Course[]>(url);
+
+  }
+
   addCourse(course: Course): Observable<Course> {
     return this.http.post<Course>(`${this.baseUrl}/courses`, course);
   }

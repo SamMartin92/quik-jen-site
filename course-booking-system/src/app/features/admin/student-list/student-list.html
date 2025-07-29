@@ -1,1 +1,43 @@
-<p>student-list works!</p>
+<h2>All Students</h2>
+
+@if (loading) {
+<p>Loading students...</p>
+}
+
+@if (errorMsg) {
+<div class="error">
+    <p>{{ errorMsg }}</p>
+</div>
+}
+
+@if (!loading && !errorMsg) {
+@if (students.length > 0) {
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Enrolled Courses</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (student of students; track student.id) {
+        <tr>
+            <td>{{ student.id }}</td>
+            <td>{{ student.name }}</td>
+            <td>{{ student.email }}</td>
+            <td>
+                @for (courseId of student.enrolledCourses; track courseId) {
+                {{ getCourseTitle(courseId) }}<br />
+                }
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+}
+@else {
+<p>No students found.</p>
+}
+}
