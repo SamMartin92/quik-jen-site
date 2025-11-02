@@ -6687,7 +6687,7 @@ textarea.form-control-lg {
   background-color: RGBA(220, 53, 69, var(--bs-bg-opacity, 1)) !important;
 }
 
-.text-bg-light {
+.text-bg-2 {
   color: var(--bs-body-bg) !important;
 }
 
@@ -8156,7 +8156,7 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-light {
+.bg-2 {
   background-color: var(--bs-body-bg-2) !important;
 }
 
@@ -10947,7 +10947,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  /* background-image: url("../assets/img/header-bg.jpg"); */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
