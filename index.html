@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tailored Tuition - Dyslexia assessment, Specialist tuition and English language service in Thurles, County Tipperary.">
+    <title>Tailored Tuition | Dyslexia Assessment & Specialist Tuition</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- CUSTOM VARIABLES & OVERRIDES --- */
+        :root {
+            --primary-teal: #468291; 
+            --accent-cream: #f4eecc;
+            --text-main: #333333;
+            --text-muted: #555555;
+            --font-main: 'Open Sans', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--text-main);
+            padding-top: 76px; /* Offset for fixed header */
+            background-color: #f9f9f9;
+        }
+
+        /* --- NAVIGATION --- */
+        .navbar {
+            background-color: var(--primary-teal);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--accent-cream) !important;
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            color: rgba(255,255,255,0.9) !important;
+            font-weight: 600;
+            margin-left: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--accent-cream) !important;
+        }
+
+        .navbar-toggler {
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* --- HERO SECTION --- */
+        .hero-section {
+            background-color: var(--primary-teal);
+            color: #ffffff;
+            padding: 4rem 0 6rem 0;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            margin-bottom: 3rem;
+        }
+
+        .hero-subtitle {
+            color: var(--accent-cream);
+            font-size: 1.25rem;
+            opacity: 0.9;
+        }
+
+        .logo-img {
+            max-width: 140px;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        /* --- CARDS & GRID --- */
+        .custom-card {
+            background: #ffffff;
+            border: none;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--primary-teal);
+        }
+
+        .custom-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            color: var(--primary-teal);
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--primary-teal);
+            margin: 10px auto 0;
+            opacity: 0.5;
+        }
+
+        .contact-icon {
+            color: var(--primary-teal);
+            font-weight: 700;
+            margin-right: 10px;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 3rem 0;
+            margin-top: 5rem;
+            text-align: center;
+        }
+        
+        footer p {
+            color: #aaa;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Fix anchor scrolling offset so header doesn't cover title */
+        section {
+            scroll-margin-top: 100px;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100">
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Tailored Tuition</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="container">
+            <img src="logotailored.png" alt="Tailored Tuition Logo" class="logo-img" onerror="this.style.display='none'">
+            <h1 class="display-4 fw-bold">Tailored Tuition</h1>
+            <p class="hero-subtitle">Dyslexia assessment, Specialist tuition and English language service</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section id="contact" style="margin-top: -5rem;">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="custom-card text-center text-md-start">
+                        <h3 class="h4 mb-3">Get in Touch</h3>
+                        <p class="mb-2"><span class="contact-icon">Email:</span> <a href="mailto:info@ttuition.ie" class="text-decoration-none text-dark">info@ttuition.ie</a></p>
+                        <p class="mb-0"><span class="contact-icon">Phone:</span> <a href="tel:0860873335" class="text-decoration-none text-dark">(086) 087 33 35</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="custom-card text-center text-md-start">
+                        <h3 class="h4 mb-3">Location</h3>
+                        <p class="mb-0 text-muted">
+                            Tailored Tuition Ltd.<br>
+                            Thurles Chamber Enterprise Centre<br>
+                            Thurles Campus, Nenagh Road<br>
+                            Thurles, County Tipperary, E41 T6K5
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-5 mt-5">
+            <h2 class="section-title">Our Services</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-6">
+                    <div class="custom-card">
+                        <h3 class="h5 text-primary fw-bold mb-3">Dyslexia Assessment</h3>
+                        <p class="small fw-bold text-uppercase text-muted mb-2">Online & In-person (UK & Ireland)</p>
+                        <p>A comprehensive diagnostic process including:</p>
+                        <ul class="text-muted">
+                            <li>Pre-assessment information gathering</li>
+                            <li>Diagnostic assessment</li>
+                            <li>Detailed written report</li>
+                            <li>Feedback consultation session</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="custom-card">
+                        <h3 class="h5 text-primary fw-bold mb-3">Specialist Tuition</h3>
+                        
+                        <div class="mb-3">
+                            <strong class="d-block mb-1">Individual (Online & In-person)</strong>
+                            <p class="text-muted small">Available in blocks of intervention. Sessions agreed in advance. Includes structured literacy & study skills.</p>
+                        </div>
+                        
+                        <div class="border-top pt-3">
+                            <strong class="d-block mb-1">Group (In-person)</strong>
+                            <p class="text-muted small mb-0">Small group sessions focused on structured literacy & handwriting intervention.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="custom-card">
+                        <h3 class="h5 text-primary fw-bold mb-3">Literacy Consultation</h3>
+                        <p class="small fw-bold text-uppercase text-muted mb-2">Online & In-person</p>
+                        <p class="text-muted">A concise written report detailing results and recommendations will be delivered within 10 working days. May involve:</p>
+                        <ul class="text-muted small mb-0">
+                            <li>Information gathering</li>
+                            <li>Screening assessment in literacy</li>
+                            <li>Specific subtests to assess current abilities</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="custom-card">
+                        <h3 class="h5 text-primary fw-bold mb-3">Other Services</h3>
+                        
+                        <div class="mb-3">
+                            <strong>Parent Consultation (30 mins)</strong>
+                            <p class="text-muted small">Face-to-face, online, or by telephone to discuss literacy concerns confidentially.</p>
+                        </div>
+
+                        <div>
+                            <strong>English Language Lessons</strong>
+                            <p class="text-muted small">Group based lessons offered on a termly basis subject to demand.</p>
+                        </div>
+                        
+                        <div class="mt-3 pt-3 border-top">
+                            <span style="color: var(--primary-teal); font-weight: 700;">Coming 2025: Social communication Lego based groups.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="custom-card bg-white">
+                        <h2 class="section-title mb-4">About Jennie McAleese</h2>
+                        <p class="lead text-center mb-4">Qualified specialist practitioner holding an approved qualification in SpLD Dyslexia assessment & intervention.</p>
+                        
+                        <div class="row">
+                            <div class="col-md-10 mx-auto text-muted">
+                                <p>Jennie is a member of the <strong>British Dyslexia Association</strong> and holds a current Specific Learning Difficulties Assessment Practicing Certificate with the professional association of teachers of students with specific learning difficulties in the UK.</p>
+                                <p class="mb-0 p-3 bg-light rounded border-start border-4 border-info">
+                                    <strong>Qualification:</strong> SpLD Postgraduate Certificate in Specific Learning Difficulties, Dyslexia. Awarded by Edgehill University.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tailored Tuition Ltd. All rights reserved.</p>
+            <p class="small opacity-75">Thurles Chamber Enterprise Centre, Thurles Campus, Nenagh Road, Thurles, Co. Tipperary</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
