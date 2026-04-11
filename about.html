@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en-IE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Jennie McAleese | Dyslexia Specialist Tipperary | Tailored Tuition</title>
+    <meta name="description" content="Learn about Jennie McAleese, a qualified SpLD Dyslexia assessment & intervention specialist based in Tipperary, Ireland, serving clients locally and across the UK." />
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body class="font-sans text-slate-800 bg-slate-50 flex flex-col min-h-screen">
+    
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20">
+          <div class="flex items-center">
+            <a href="/" class="flex items-center gap-2">
+              <svg class="h-8 w-8 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+              <span class="font-bold text-xl text-slate-800 tracking-tight">Tailored Tuition</span>
+            </a>
+          </div>
+          <nav class="hidden md:flex items-center gap-8">
+            <a href="/" class="text-slate-600 hover:text-teal-600 font-medium transition-colors">Home</a>
+            <a href="/about.html" class="text-teal-600 font-medium transition-colors">About</a>
+            <div class="relative group">
+              <button class="flex items-center gap-1 text-slate-600 hover:text-teal-600 font-medium transition-colors py-8">
+                Services
+                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </button>
+              <div class="absolute top-full left-0 w-56 bg-white shadow-lg rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-slate-100 overflow-hidden">
+                <a href="/services.html#assessment" class="block px-4 py-3 text-sm text-slate-600 hover:bg-teal-50 hover:text-teal-700">Dyslexia Assessment</a>
+                <a href="/services.html#tuition" class="block px-4 py-3 text-sm text-slate-600 hover:bg-teal-50 hover:text-teal-700">Specialist Tuition</a>
+                <a href="/services.html#consultation" class="block px-4 py-3 text-sm text-slate-600 hover:bg-teal-50 hover:text-teal-700">Consultations</a>
+              </div>
+            </div>
+            <a href="/latest.html" class="text-slate-600 hover:text-teal-600 font-medium transition-colors">Latest</a>
+            <a href="/contact.html" class="bg-teal-600 text-white px-5 py-2.5 rounded-md font-medium hover:bg-teal-700 transition-colors">Contact</a>
+          </nav>
+          <div class="flex items-center md:hidden">
+            <button id="mobile-menu-btn" class="text-slate-600 hover:text-teal-600 p-2">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="mobile-menu" class="md:hidden bg-white border-t border-slate-100 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
+        <div class="px-4 pt-2 pb-6 space-y-1">
+          <a href="/" class="block px-3 py-3 text-base font-medium text-slate-800 hover:bg-teal-50 hover:text-teal-600 rounded-md">Home</a>
+          <a href="/about.html" class="block px-3 py-3 text-base font-medium text-teal-600 bg-teal-50 rounded-md">About</a>
+          <div>
+            <button id="mobile-services-btn" class="flex items-center justify-between w-full px-3 py-3 text-base font-medium text-slate-800 hover:bg-teal-50 hover:text-teal-600 rounded-md">
+              Services
+              <svg id="mobile-services-icon" class="h-5 w-5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </button>
+            <div id="mobile-services-menu" class="pl-6 space-y-1 mt-1 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
+              <a href="/services.html#assessment" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-600">Dyslexia Assessment</a>
+              <a href="/services.html#tuition" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-600">Specialist Tuition</a>
+              <a href="/services.html#consultation" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-600">Consultations</a>
+            </div>
+          </div>
+          <a href="/latest.html" class="block px-3 py-3 text-base font-medium text-slate-800 hover:bg-teal-50 hover:text-teal-600 rounded-md">Latest</a>
+          <a href="/contact.html" class="block px-3 py-3 text-base font-medium text-slate-800 hover:bg-teal-50 hover:text-teal-600 rounded-md">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow">
+      <section class="relative bg-slate-900 h-[400px] flex items-center">
+        <img src="https://picsum.photos/seed/about/1920/1080" alt="About Tailored Tuition" class="absolute inset-0 w-full h-full object-cover opacity-40" referrerPolicy="no-referrer" />
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
+          <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">About Us</h1>
+        </div>
+      </section>
+
+      <div class="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-8 md:p-10">
+          <div class="flex flex-col md:flex-row gap-8 items-start">
+            <div class="w-full md:w-1/3">
+              <img src="https://picsum.photos/seed/teacher/400/500" alt="Jennie McAleese, Dyslexia Specialist in Tipperary" class="rounded-lg object-cover w-full shadow-md" referrerPolicy="no-referrer" />
+            </div>
+            <div class="w-full md:w-2/3">
+              <h2 class="text-2xl font-bold text-slate-800 mb-4">Jennie McAleese</h2>
+              <p class="text-slate-600 mb-4 leading-relaxed">
+                Jennie McAleese is a qualified specialist practitioner holding an approved qualification in SpLD Dyslexia assessment & intervention. Jennie is a member of the British Dyslexia Association.
+              </p>
+              <p class="text-slate-600 mb-6 leading-relaxed">
+                Jennie holds a current Specific Learning Difficulties Assessment Practicing Certificate with the professional association of teachers of students with specific learning difficulties in the UK, who are a regulation body of standards in practice.
+              </p>
+              
+              <div class="bg-teal-50 p-6 rounded-lg border border-teal-100">
+                <h3 class="font-bold text-teal-900 mb-2">Qualifications</h3>
+                <ul class="list-disc list-inside text-teal-800 space-y-2">
+                  <li>SpLD Qualification Postgraduate Certificate in Specific Learning Difficulties, Dyslexia.</li>
+                  <li>Awarded by Edgehill University.</li>
+                </ul>
+              </div>
+              
+              <div class="mt-8">
+                <a href="/contact.html" class="inline-block bg-teal-600 text-white px-6 py-3 rounded-md font-medium hover:bg-teal-700 transition-colors">Get in Touch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-300 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-white text-lg font-bold mb-4">Tailored Tuition</h3>
+            <p class="text-sm">Dyslexia assessment, Specialist tuition and English language service.</p>
+          </div>
+          <div>
+            <h3 class="text-white text-lg font-bold mb-4">Contact</h3>
+            <p class="text-sm mb-2">Email: <a href="mailto:info@ttuition.ie" class="text-teal-400 hover:text-teal-300">info@ttuition.ie</a></p>
+            <p class="text-sm">Phone: (086) 087 33 35</p>
+            <p class="text-sm mt-2">Thurles Chamber Enterprise Centre,<br>Thurles Campus, Nenagh Road,<br>Thurles, County Tipperary<br>E41 T6K5</p>
+          </div>
+          <div>
+            <h3 class="text-white text-lg font-bold mb-4">Social</h3>
+            <div class="flex gap-4">
+              <a href="#" class="text-slate-400 hover:text-white transition-colors">Facebook</a>
+              <a href="#" class="text-slate-400 hover:text-white transition-colors">Twitter</a>
+              <a href="#" class="text-slate-400 hover:text-white transition-colors">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-slate-800 mt-8 pt-8 text-sm text-center">
+          &copy; 2026 Tailored Tuition Ltd. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
