@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Tailored Tuition - Dyslexia Assessment & Specialist Tuition",
   "scripts": {
+    "build": "tailwindcss -i ./src/index.css -o ./dist/styles.css",
     "build:css": "tailwindcss -i ./src/index.css -o ./dist/styles.css",
     "watch:css": "tailwindcss -i ./src/index.css -o ./dist/styles.css --watch"
   },
