@@ -5,40 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Consultations | Tailored Tuition Tipperary</title>
     <meta name="description" content="Parent and literacy consultations to discuss literacy concerns and support. Available face-to-face, online, and by telephone." />
-    <link rel="stylesheet" href="/quik-jen-site/dist/styles.css" />
+    <link rel="stylesheet" href="./dist/styles.css" />
   </head>
-  <body class="font-sans text-slate-800 bg-slate-50 flex flex-col min-h-screen">
+  <body class="font-sans text-secondary-900 bg-primary flex flex-col min-h-screen">
     
-    <header class="bg-white shadow-sm sticky top-0 z-50">
+    <header class="bg-primary  sticky top-0 z-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-20">
+        <div class="flex justify-between h-24">
           <div class="flex items-center">
-            <a href="/quik-jen-site/index.html" class="flex items-center gap-2">
-              <svg class="h-8 w-8 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-              </svg>
-              <span class="font-bold text-xl text-slate-800 tracking-tight">Tailored Tuition</span>
+            <a href="./" class="flex items-center">
+              <img src="./transparent-logo.svg" alt="Tailored Tuition Logo" class="h-20 w-auto" />
             </a>
           </div>
           <nav class="hidden md:flex items-center gap-8">
-            <a href="/quik-jen-site/index.html" class="text-slate-600 hover:text-teal-600 font-medium transition-colors">Home</a>
-            <a href="/quik-jen-site/about.html" class="text-slate-600 hover:text-teal-600 font-medium transition-colors">About</a>
+            <a href="./index.html" class="text-secondary-800 hover:text-secondary font-medium transition-colors">Home</a>
+            <a href="./about.html" class="text-secondary-800 hover:text-secondary font-medium transition-colors">About</a>
             <div class="relative group">
-              <button class="flex items-center gap-1 text-teal-600 font-medium transition-colors py-8">
+              <button class="flex items-center gap-1 text-secondary font-medium transition-colors py-8">
                 Services
                 <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
               </button>
-              <div class="absolute top-full left-0 w-56 bg-white shadow-lg rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-slate-100 overflow-hidden">
-                <a href="/quik-jen-site/assessment.html" class="block px-4 py-3 text-sm text-slate-600 hover:bg-teal-50 hover:text-teal-700">Dyslexia Assessment</a>
-                <a href="/quik-jen-site/tuition.html" class="block px-4 py-3 text-sm text-slate-600 hover:bg-teal-50 hover:text-teal-700">Specialist Tuition</a>
-                <a href="/quik-jen-site/consultation.html" class="block px-4 py-3 text-sm text-teal-700 hover:bg-teal-50">Consultations</a>
+              <div class="absolute top-full left-0 w-56 bg-primary  rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200  overflow-hidden">
+                <a href="./assessment.html" class="block px-4 py-3 text-sm text-secondary-800 hover:bg-primary hover:text-secondary-600">Dyslexia Assessment</a>
+                <a href="./tuition.html" class="block px-4 py-3 text-sm text-secondary-800 hover:bg-primary hover:text-secondary-600">Specialist Tuition</a>
+                <a href="./consultation.html" class="block px-4 py-3 text-sm text-secondary-600 hover:bg-primary">Consultations</a>
+                <a href="./english.html" class="block px-4 py-3 text-sm text-secondary-800 hover:bg-primary hover:text-secondary-600">English Language Lessons</a>
+                <a href="./lego.html" class="block px-4 py-3 text-sm text-secondary-800 hover:bg-primary hover:text-secondary-600">Lego Based Groups</a>
               </div>
             </div>
-            <a href="/quik-jen-site/latest.html" class="text-slate-600 hover:text-teal-600 font-medium transition-colors">Latest</a>
-            <a href="/quik-jen-site/contact.html" class="bg-teal-600 text-white px-5 py-2.5 rounded-md font-medium hover:bg-teal-700 transition-colors">Contact</a>
+            <a href="./latest.html" class="text-secondary-800 hover:text-secondary font-medium transition-colors">Latest</a>
+            <a href="./contact.html" class="bg-secondary text-white px-5 py-2.5 rounded-md font-medium hover:bg-secondary-600 transition-colors">Contact</a>
           </nav>
           <div class="flex items-center md:hidden">
-            <button id="mobile-menu-btn" class="text-slate-600 hover:text-teal-600 p-2">
+            <button id="mobile-menu-btn" class="text-secondary-800 hover:text-secondary p-2">
               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
@@ -47,29 +46,31 @@
         </div>
       </div>
       
-      <div id="mobile-menu" class="md:hidden bg-white border-t border-slate-100 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
+      <div id="mobile-menu" class="md:hidden bg-primary border-t border-primary-300 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
         <div class="px-4 pt-2 pb-6 space-y-1">
-          <a href="/quik-jen-site/index.html" class="block px-3 py-3 text-base font-medium text-slate-800 hover:bg-teal-50 hover:text-teal-600 rounded-md">Home</a>
-          <a href="/quik-jen-site/about.html" class="block px-3 py-3 text-base font-medium text-slate-800 hover:bg-teal-50 hover:text-teal-600 rounded-md">About</a>
+          <a href="./index.html" class="block px-3 py-3 text-base font-medium text-secondary-900 hover:bg-primary hover:text-secondary rounded-md">Home</a>
+          <a href="./about.html" class="block px-3 py-3 text-base font-medium text-secondary-900 hover:bg-primary hover:text-secondary rounded-md">About</a>
           <div>
-            <button id="mobile-services-btn" class="flex items-center justify-between w-full px-3 py-3 text-base font-medium text-teal-600 bg-teal-50 rounded-md">
+            <button id="mobile-services-btn" class="flex items-center justify-between w-full px-3 py-3 text-base font-medium text-secondary bg-primary rounded-md">
               Services
               <svg id="mobile-services-icon" class="h-5 w-5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
             </button>
             <div id="mobile-services-menu" class="pl-6 space-y-1 mt-1 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
-              <a href="/quik-jen-site/assessment.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-600">Dyslexia Assessment</a>
-              <a href="/quik-jen-site/tuition.html" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-600">Specialist Tuition</a>
-              <a href="/quik-jen-site/consultation.html" class="block px-3 py-2 text-sm font-medium text-teal-600">Consultations</a>
+              <a href="./assessment.html" class="block px-3 py-2 text-sm font-medium text-secondary-800 hover:text-secondary">Dyslexia Assessment</a>
+              <a href="./tuition.html" class="block px-3 py-2 text-sm font-medium text-secondary-800 hover:text-secondary">Specialist Tuition</a>
+              <a href="./consultation.html" class="block px-3 py-2 text-sm font-medium text-secondary">Consultations</a>
+              <a href="./english.html" class="block px-3 py-2 text-sm font-medium text-secondary-800 hover:text-secondary">English Language Lessons</a>
+              <a href="./lego.html" class="block px-3 py-2 text-sm font-medium text-secondary-800 hover:text-secondary">Lego Based Groups</a>
             </div>
           </div>
-          <a href="/quik-jen-site/latest.html" class="block px-3 py-3 text-base font-medium text-slate-800 hover:bg-teal-50 hover:text-teal-600 rounded-md">Latest</a>
-          <a href="/quik-jen-site/contact.html" class="block px-3 py-3 text-base font-medium text-slate-800 hover:bg-teal-50 hover:text-teal-600 rounded-md">Contact</a>
+          <a href="./latest.html" class="block px-3 py-3 text-base font-medium text-secondary-900 hover:bg-primary hover:text-secondary rounded-md">Latest</a>
+          <a href="./contact.html" class="block px-3 py-3 text-base font-medium text-secondary-900 hover:bg-primary hover:text-secondary rounded-md">Contact</a>
         </div>
       </div>
     </header>
 
     <main class="flex-grow">
-      <section class="relative bg-slate-900 h-[400px] flex items-center">
+      <section class="relative bg-secondary-900 h-[400px] flex items-center">
         <img src="https://picsum.photos/seed/consultation/1920/1080" alt="Consultations" class="absolute inset-0 w-full h-full object-cover opacity-40" referrerPolicy="no-referrer" />
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
           <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">Consultations</h1>
@@ -77,56 +78,72 @@
       </section>
 
       <div class="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-8">
+        <div class="bg-primary rounded-xl   p-8">
           <div class="mb-8">
-            <h2 class="text-2xl font-bold text-teal-800 mb-4">Parent Consultation (30 minutes)</h2>
-            <p class="text-slate-600">At times, it can be helpful to discuss literacy concerns in a confidential space. Parent consultation is available face-to-face, online or by telephone.</p>
+            <h2 class="text-2xl font-bold text-secondary-700 mb-4">Parent Consultation (30 minutes)</h2>
+            <p class="text-secondary-800">At times, it can be helpful to discuss literacy concerns in a confidential space. Parent consultation is available face-to-face, online or by telephone.</p>
           </div>
           
-          <div class="mb-8 pb-8 border-b border-slate-200">
-            <h2 class="text-2xl font-bold text-teal-800 mb-4">Literacy Consultation</h2>
-            <p class="text-slate-600 mb-2">Available online & in-person. A literacy consultation may involve a combination of:</p>
-            <ul class="list-disc list-inside text-slate-600 mb-4 space-y-1">
+          <div class="mb-8 pb-8 border-b border-secondary-300">
+            <h2 class="text-2xl font-bold text-secondary-700 mb-4">Literacy Consultation</h2>
+            <p class="text-secondary-800 mb-2">Available online & in-person. A literacy consultation may involve a combination of:</p>
+            <ul class="list-disc list-inside text-secondary-800 mb-4 space-y-1">
               <li>Information gathering</li>
               <li>Screening assessment in literacy</li>
               <li>Specific subtests to assess current abilities</li>
             </ul>
-            <p class="text-slate-600">A concise written report detailing results and recommendations (as appropriate) will be delivered within 10 working days.</p>
+            <p class="text-secondary-800">A concise written report detailing results and recommendations (as appropriate) will be delivered within 10 working days.</p>
           </div>
 
-          <a href="/quik-jen-site/contact.html" class="inline-block bg-teal-600 text-white px-6 py-3 rounded-md font-medium hover:bg-teal-700 transition-colors">Book a Consultation</a>
+          <a href="./contact.html" class="inline-block bg-secondary text-white px-6 py-3 rounded-md font-medium hover:bg-secondary-600 transition-colors">Book a Consultation</a>
         </div>
       </div>
     </main>
 
-    <footer class="bg-slate-900 text-slate-300 py-12">
+    <footer class="bg-secondary-900 text-primary-100 py-12">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 class="text-white text-lg font-bold mb-4">Tailored Tuition</h3>
             <p class="text-sm">Dyslexia assessment, Specialist tuition and English language service.</p>
           </div>
           <div>
+            <h3 class="text-white text-lg font-bold mb-4">Services</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="./assessment.html" class="text-primary-200 hover:text-white transition-colors">Dyslexia Assessment</a></li>
+              <li><a href="./tuition.html" class="text-primary-200 hover:text-white transition-colors">Specialist Tuition</a></li>
+              <li><a href="./consultation.html" class="text-primary-200 hover:text-white transition-colors">Consultations</a></li>
+              <li><a href="./english.html" class="text-primary-200 hover:text-white transition-colors">English Language Lessons</a></li>
+              <li><a href="./lego.html" class="text-primary-200 hover:text-white transition-colors">Lego Based Groups</a></li>
+            </ul>
+          </div>
+          <div>
             <h3 class="text-white text-lg font-bold mb-4">Contact</h3>
-            <p class="text-sm mb-2">Email: <a href="mailto:info@ttuition.ie" class="text-teal-400 hover:text-teal-300">info@ttuition.ie</a></p>
+            <p class="text-sm mb-2">Email: <a href="mailto:info@ttuition.ie" class="text-secondary-400 hover:text-secondary-300">info@ttuition.ie</a></p>
             <p class="text-sm">Phone: (086) 087 33 35</p>
-            <p class="text-sm mt-2">Thurles Chamber Enterprise Centre,<br>Thurles Campus, Nenagh Road,<br>Thurles, County Tipperary<br>E41 T6K5</p>
+            <p class="text-sm mt-2"><a href="./privacy-policy.html" class="text-secondary-400 hover:text-secondary-300">Privacy Policy</a></p>
           </div>
           <div>
             <h3 class="text-white text-lg font-bold mb-4">Social</h3>
             <div class="flex gap-4">
-              <a href="#" class="text-slate-400 hover:text-white transition-colors">Facebook</a>
-              <a href="#" class="text-slate-400 hover:text-white transition-colors">Twitter</a>
-              <a href="#" class="text-slate-400 hover:text-white transition-colors">LinkedIn</a>
+              <a href="#" class="text-primary-200 hover:text-white transition-colors" aria-label="Facebook">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+              </a>
+              <a href="#" class="text-primary-200 hover:text-white transition-colors" aria-label="Instagram">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+              </a>
+              <a href="#" class="text-primary-200 hover:text-white transition-colors" aria-label="LinkedIn">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" /></svg>
+              </a>
             </div>
           </div>
         </div>
-        <div class="border-t border-slate-800 mt-8 pt-8 text-sm text-center">
+        <div class="border-t border-secondary-800 mt-8 pt-8 text-sm text-center">
           &copy; 2026 Tailored Tuition Ltd. All rights reserved.
         </div>
       </div>
     </footer>
 
-    <script type="module" src="/quik-jen-site/src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
