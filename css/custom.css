@@ -1,0 +1,252 @@
+/* =========================================================
+   Tailored Tuition — site-specific styles
+   Layered on top of the Start Bootstrap "Agency" theme.
+   ========================================================= */
+
+body {
+    overflow-x: hidden;
+}
+
+/* ---- Hero (home page) ---- */
+.hero {
+    padding: 9rem 0 4rem;
+    background: linear-gradient(160deg, #2f5b66 0%, var(--bs-body-bg-1) 55%, #5fa4b0 100%);
+    color: var(--bs-body-color-1);
+}
+
+.hero-logo {
+    width: 8rem;
+    height: 8rem;
+    object-fit: contain;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+.hero-title {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 2.75rem;
+    letter-spacing: 0.02em;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.hero-subtitle {
+    font-family: "Roboto Slab", serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+}
+
+.hero-highlight {
+    background: rgba(244, 238, 204, 0.97);
+    color: #21414a;
+    border-left: 0.4rem solid var(--bs-warning);
+    border-radius: 0.5rem;
+    padding: 2rem 2.25rem;
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.2);
+}
+
+.hero-highlight h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-highlight p {
+    margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+    .hero {
+        padding: 11.5rem 0 5.5rem;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+}
+
+/* ---- Secondary page headers (services / assessments / contact) ---- */
+.page-header {
+    padding: 9rem 0 3.5rem;
+    background: linear-gradient(160deg, #2f5b66 0%, var(--bs-body-bg-1) 100%);
+    color: var(--bs-body-color-1);
+}
+
+.page-header-title {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.page-header-subtitle {
+    font-family: "Roboto Slab", serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    .page-header {
+        padding: 11rem 0 4.5rem;
+    }
+}
+
+/* ---- Section polish ---- */
+.page-section .section-subheading {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---- About ---- */
+.about-logo {
+    width: 11rem;
+    height: 11rem;
+    object-fit: contain;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+.credential-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+    text-align: left;
+}
+
+.credential-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.85rem;
+}
+
+.credential-list li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--bs-warning);
+    position: absolute;
+    left: 0;
+    top: 0.15rem;
+}
+
+/* ---- "What I offer" / step cards ---- */
+.offer-card,
+.step-card {
+    height: 100%;
+    padding: 2.25rem 1.5rem;
+    text-align: center;
+    background: #fff;
+    color: #21414a;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.offer-card:hover,
+.step-card:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.offer-card h4,
+.step-card h4 {
+    font-weight: 700;
+}
+
+.offer-icon-font {
+    font-size: 2.5rem;
+    color: var(--bs-body-bg-1);
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    background: var(--bs-warning);
+    color: #21414a;
+    font-weight: 700;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* ---- Contact page ---- */
+section#contact {
+    background-image: none;
+}
+
+.contact-info {
+    margin-top: 0.5rem;
+}
+
+.contact-info li {
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    font-size: 1.05rem;
+}
+
+.contact-info i {
+    color: var(--bs-warning);
+    margin-top: 0.25rem;
+}
+
+.contact-info-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-info-link:hover {
+    color: var(--bs-warning);
+}
+
+.contact-map {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+}
+
+/* ---- Footer ---- */
+.footer {
+    background: #21414a;
+    color: var(--bs-body-color-1);
+    text-align: left;
+}
+
+.footer h3 {
+    font-size: 1.05rem;
+}
+
+.footer address {
+    font-style: normal;
+}
+
+.footer a.footer-link {
+    color: var(--bs-body-color-1);
+    text-decoration: none;
+}
+
+.footer a.footer-link:hover {
+    color: var(--bs-warning);
+}
+
+.footer .footer-divider {
+    border: 0;
+    border-top: 1px solid rgba(244, 238, 204, 0.25);
+    opacity: 1;
+}
+
+.footer .text-center.small {
+    color: rgba(244, 238, 204, 0.75);
+}
