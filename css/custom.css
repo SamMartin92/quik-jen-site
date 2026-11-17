@@ -1,0 +1,175 @@
+/*
+ * Tailored Tuition — custom UI overrides.
+ *
+ * Loaded after css/styles.css (the Start Bootstrap / Bootstrap theme), so
+ * these rules win without editing that 250KB file. Keep the teal / cream /
+ * yellow palette, but fix the two things that hurt readability most:
+ * low-contrast text, and dense, cramped body copy on a dyslexia
+ * screening service's site.
+ */
+
+/* --- Readability: dyslexia-friendly spacing, left-aligned, shorter lines --- */
+body {
+  background-color: #2e5a66;
+  color: #ffffff;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+
+p {
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+}
+
+.section-heading {
+  letter-spacing: 0.02em;
+}
+
+.section-subheading {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* --- Contrast: darker teal so white / cream text passes WCAG AA --- */
+.bg-1 {
+  background-color: #2e5a66 !important;
+  color: #ffffff !important;
+}
+
+.bg-2 {
+  background-color: #f4eecc !important;
+  color: #23454e !important;
+}
+
+.text-gradient {
+  color: #ffffff;
+}
+
+/* --- Navigation: solid dark teal, yellow hover / active state --- */
+#mainNav {
+  background-color: #23454e;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #ffc800;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active {
+  border-bottom: 2px solid #ffc800;
+}
+
+@media (min-width: 992px) {
+  #mainNav.navbar-shrink {
+    background-color: #23454e;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* --- Hero: the logo had no size, so it could blow out the layout --- */
+.profile-img {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  margin: 0 auto 1.5rem;
+}
+
+/* --- Service cards: proper cards instead of bare icons on teal --- */
+#services .services-item {
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#services .services-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+#services .services-item .services-link {
+  background-color: #2e5a66;
+  padding: 2rem;
+}
+
+.service-logo {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  fill: #f4eecc;
+}
+
+#services .services-item .services-caption-heading {
+  color: #1f3a41;
+}
+
+#services .services-item .services-link .services-hover {
+  background: rgba(46, 90, 102, 0.92);
+}
+
+/* --- Buttons, forms and focus: clear, chunky, visible when tabbing --- */
+.btn {
+  border-radius: 0.75rem;
+}
+
+.btn-warning {
+  color: #1a1a1a;
+}
+
+.btn-warning:hover {
+  background-color: #e6b400;
+  border-color: #e6b400;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #ffc800;
+  outline-offset: 3px;
+}
+
+section#contact form#contactForm .form-control {
+  border-radius: 0.75rem;
+  background-color: #ffffff;
+  color: #212529;
+}
+
+/* --- Sections: less empty vertical space, especially on mobile --- */
+section {
+  padding: 4.5rem 0;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 6rem 0;
+  }
+}
+
+/* --- Respect reduced-motion preferences --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
